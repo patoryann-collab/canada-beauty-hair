@@ -4,11 +4,11 @@ import { Phone, Mail, LocationOn, Facebook, Instagram, Twitter, Schedule } from 
 
 export default function Footer() {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous', '_blank');
+    window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous', '_blank');
   };
 
   return (
-    <footer className="bg-[#1B3022] text-white">
+    <footer className="bg-[#0A0A0A] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -20,8 +20,8 @@ export default function Footer() {
             className="space-y-4"
           >
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#C5A059] to-white rounded-full flex items-center justify-center">
-                <span className="text-[#1B3022] font-bold text-lg">BS</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-white rounded-full flex items-center justify-center">
+                <span className="text-[#0A0A0A] font-bold text-lg">BS</span>
               </div>
               <span 
                 className="text-xl font-black"
@@ -35,13 +35,13 @@ export default function Footer() {
               Des prestations d'exception pour sublimer votre beauté naturelle.
             </p>
             <div className="flex space-x-4">
-              <button className="w-10 h-10 bg-[#C5A059]/20 rounded-full flex items-center justify-center hover:bg-[#C5A059] transition-colors">
+              <button className="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-colors">
                 <Facebook fontSize="small" />
               </button>
-              <button className="w-10 h-10 bg-[#C5A059]/20 rounded-full flex items-center justify-center hover:bg-[#C5A059] transition-colors">
+              <button className="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-colors">
                 <Instagram fontSize="small" />
               </button>
-              <button className="w-10 h-10 bg-[#C5A059]/20 rounded-full flex items-center justify-center hover:bg-[#C5A059] transition-colors">
+              <button className="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-colors">
                 <Twitter fontSize="small" />
               </button>
             </div>
@@ -65,7 +65,7 @@ export default function Footer() {
               <li>
                 <Link 
                   to="/" 
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors"
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors"
                 >
                   Accueil
                 </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <Link 
                   to="/services" 
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors"
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors"
                 >
                   Boutique
                 </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
               <li>
                 <Link 
                   to="/services" 
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors"
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors"
                 >
                   Services
                 </Link>
@@ -89,7 +89,7 @@ export default function Footer() {
               <li>
                 <Link 
                   to="/about" 
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors"
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors"
                 >
                   À Propos
                 </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
               <li>
                 <Link 
                   to="/contact" 
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors"
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors"
                 >
                   Contact
                 </Link>
@@ -122,32 +122,32 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous pour Soins du visage', '_blank')}
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors text-left"
+                  onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous pour Soins du visage', '_blank')}
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors text-left"
                 >
                   Soins du Visage
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous pour Maquillage', '_blank')}
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors text-left"
+                  onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous pour Maquillage', '_blank')}
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors text-left"
                 >
                   Maquillage Pro
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous pour Coiffure', '_blank')}
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors text-left"
+                  onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous pour Coiffure', '_blank')}
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors text-left"
                 >
                   Coiffure & Soins
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous pour Ongles', '_blank')}
-                  className="text-gray-300 hover:text-[#C5A059] transition-colors text-left"
+                  onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous pour Ongles', '_blank')}
+                  className="text-gray-300 hover:text-[#D4AF37] transition-colors text-left"
                 >
                   Manucure & Pédicure
                 </button>
@@ -171,19 +171,19 @@ export default function Footer() {
             </h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone fontSize="small" className="text-[#C5A059]" />
-                <span className="text-gray-300">+33 6 12 34 56 78</span>
+                <Phone fontSize="small" className="text-[#D4AF37]" />
+                <span className="text-gray-300">+1 (514) 998-6842</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail fontSize="small" className="text-[#C5A059]" />
-                <span className="text-gray-300">contact@beauty-shop.fr</span>
+                <Mail fontSize="small" className="text-[#D4AF37]" />
+                <span className="text-gray-300">contact@beauty-shop.ca</span>
               </div>
               <div className="flex items-center space-x-3">
-                <LocationOn fontSize="small" className="text-[#C5A059]" />
-                <span className="text-gray-300">123 Avenue Élégance<br />75008 Paris</span>
+                <LocationOn fontSize="small" className="text-[#D4AF37]" />
+                <span className="text-gray-300">123 Avenue Élégance<br />Montréal, QC H3A 1A1</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Schedule fontSize="small" className="text-[#C5A059]" />
+                <Schedule fontSize="small" className="text-[#D4AF37]" />
                 <div className="text-gray-300">
                   <div>Lun-Ven: 9h-19h</div>
                   <div>Sam: 9h-18h</div>
@@ -193,7 +193,7 @@ export default function Footer() {
             
             <button
               onClick={handleWhatsAppClick}
-              className="w-full bg-[#C5A059] text-white px-4 py-3 rounded-full font-medium hover:bg-[#B8944F] transition-colors flex items-center justify-center space-x-2"
+              className="w-full bg-[#D4AF37] text-white px-4 py-3 rounded-full font-medium hover:bg-[#B89430] transition-colors flex items-center justify-center space-x-2"
             >
               <Phone fontSize="small" />
               <span>Réserver sur WhatsApp</span>
@@ -203,20 +203,20 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#C5A059]/20">
+      <div className="border-t border-[#D4AF37]/20">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
               © 2024 Beauty Shop - Élégance Nature. Tous droits réservés.
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link to="/privacy" className="text-gray-400 hover:text-[#C5A059] transition-colors">
+              <Link to="/privacy" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
                 Politique de Confidentialité
               </Link>
-              <Link to="/terms" className="text-gray-400 hover:text-[#C5A059] transition-colors">
+              <Link to="/terms" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
                 Mentions Légales
               </Link>
-              <Link to="/cgv" className="text-gray-400 hover:text-[#C5A059] transition-colors">
+              <Link to="/cgv" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
                 CGV
               </Link>
             </div>

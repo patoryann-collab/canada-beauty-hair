@@ -24,7 +24,7 @@ export default function Navbar() {
   ];
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous', '_blank');
+    window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous', '_blank');
   };
 
   return (

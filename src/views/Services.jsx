@@ -5,87 +5,206 @@ import { Star, Schedule, People, Filter, Close, WhatsApp } from '@mui/icons-mate
 const servicesData = [
   {
     id: 1,
-    title: "Coupe Premium",
-    description: "Coupe personnalisée avec diagnostic capillaire complet et styling professionnel. Service premium pour un look sur mesure.",
-    price: 120,
-    duration: "1h30",
+    title: "Knotless Braids",
+    description: "Tresses sans nœuds - les plus demandées pour le confort. Technique moderne sans tension sur le cuir chevelu.",
+    price: 150,
+    duration: "3h",
     rating: 4.9,
-    reviews: 127,
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600",
-    category: "coupe",
-    features: ["Diagnostic capillaire", "Coupe sur mesure", "Styling professionnel", "Conseils entretien"],
+    reviews: 245,
+    image: "https://i.pinimg.com/736x/83/83/7f/83837fd6e813d409bc6ea2096ec71e23.jpg",
+    category: "tresses",
+    features: ["Sans tension", "Look naturel", "Durée 4-6 semaines", "Adapté tous types"],
     popular: true
   },
   {
     id: 2,
-    title: "Coloration Luxe",
-    description: "Coloration professionnelle avec produits haut de gamme. Balayage, couleur pleine ou mèches selon vos désirs.",
-    price: 180,
+    title: "Box Braids Classiques",
+    description: "Tresses box traditionnelles avec finition parfaite. Style indémodable et polyvalent.",
+    price: 120,
     duration: "2h30",
     rating: 4.8,
-    reviews: 89,
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600",
-    category: "coloration",
-    features: ["Couleur sur mesure", "Balayage précis", "Soin post-coloration", "Protection cheveux"],
-    popular: true
+    reviews: 189,
+    image: "https://i.pinimg.com/1200x/9a/ac/be/9aacbea19d9f381e062da34e2eb88e6d.jpg",
+    category: "tresses",
+    features: ["Style classique", "Finition soignée", "Durée 6-8 semaines", "Entretien facile"]
   },
   {
     id: 3,
-    title: "Soins Capillaires",
-    description: "Soin profond pour revitaliser vos cheveux. Masque nourrissant et massage crânien relaxant.",
-    price: 90,
-    duration: "1h",
+    title: "Cornrows / Tresses plaquées",
+    description: "Styles minimalistes ou complexes selon votre choix. Tresses plaquées près du cuir chevelu.",
+    price: 100,
+    duration: "2h",
     rating: 4.7,
     reviews: 156,
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=600",
-    category: "soins",
-    features: ["Soin profond", "Masque nourrissant", "Massage crânien", "Résultat éclat"]
+    image: "https://i.pinimg.com/736x/0b/05/28/0b052868afa9b36234803c6b490b4cc8.jpg",
+    category: "tresses",
+    features: ["Styles variés", "Minimaliste ou complexe", "Durée 2-4 semaines", "Protection maximale"]
   },
   {
     id: 4,
-    title: "Forfait Complet",
-    description: "Package luxe : coupe + coloration + soin complet. Transformation complète pour un look parfait.",
-    price: 280,
+    title: "Butterfly Locs",
+    description: "Effet texturé et bohème très tendance. Locs avec effet papillon unique.",
+    price: 180,
     duration: "4h",
     rating: 4.9,
     reviews: 203,
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600",
-    category: "forfait",
-    features: ["Coupe + coloration", "Soin complet", "Styling final", "Résultat premium"],
-    bestseller: true
+    image: "https://i.pinimg.com/1200x/f2/fa/5a/f2fa5a843b8ac2db8a62225dda74676d.jpg",
+    category: "tresses",
+    features: ["Effet bohème", "Texture unique", "Durée 6-8 semaines", "Très tendance"],
+    trending: true
   },
   {
     id: 5,
-    title: "Extension Premium",
-    description: "Pose d'extensions de qualité avec méthodes professionnelles. Volume et longueur instantanés.",
-    price: 220,
-    duration: "3h",
+    title: "Soft Locs",
+    description: "Léger et élégant. Locs souples avec mouvement naturel et look sophistiqué.",
+    price: 160,
+    duration: "3h30",
     rating: 4.8,
-    reviews: 145,
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600",
-    category: "extensions",
-    features: ["Extensions qualité", "Pose professionnelle", "Effet naturel", "Durée garantie"]
+    reviews: 167,
+    image: "https://i.pinimg.com/736x/32/32/c7/3232c7c44e97f015c5c2913c2447251e.jpg",
+    category: "tresses",
+    features: ["Look léger", "Mouvement naturel", "Élégant", "Durée 4-6 semaines"]
   },
   {
     id: 6,
-    title: "Brushing Signature",
-    description: "Brushing professionnel avec produits luxe. Coiffage élégant pour événements spéciaux.",
-    price: 75,
-    duration: "1h",
+    title: "Ponytail Braided",
+    description: "Queue de cheval tressée haute. Style élégant et pratique pour toutes occasions.",
+    price: 80,
+    duration: "1h30",
     rating: 4.6,
+    reviews: 134,
+    image: "https://i.pinimg.com/736x/1b/29/41/1b2941574526e2e689448ca40d9ea564.jpg",
+    category: "tresses",
+    features: ["Style pratique", "Élégant", "Rapide à réaliser", "Polyvalent"]
+  },
+  {
+    id: 7,
+    title: "Tribal Braids",
+    description: "Inspirées des styles traditionnels africains. Designs artistiques et culturels.",
+    price: 200,
+    duration: "4h30",
+    rating: 4.9,
+    reviews: 278,
+    image: "https://i.pinimg.com/736x/f6/98/c5/f698c5195f858a9f4859dea88ba2b052.jpg",
+    category: "tresses",
+    features: ["Designs artistiques", "Inspiration culturelle", "Unique", "Durée 6-8 semaines"],
+    premium: true
+  },
+  {
+    id: 8,
+    title: "Lemonade Braids",
+    description: "Tresses sur le côté avec queue de cheval. Style frais et moderne très populaire.",
+    price: 140,
+    duration: "3h",
+    rating: 4.7,
+    reviews: 195,
+    image: "https://i.pinimg.com/736x/b2/31/fe/b231fe2cfd442eb4d2b5a20275e00b03.jpg",
+    category: "tresses",
+    features: ["Style latéral", "Moderne", "Très populaire", "Look frais"]
+  },
+  {
+    id: 9,
+    title: "Passion Twists",
+    description: "Look doux et bouclé. Twists souples avec effet naturel et mouvement.",
+    price: 130,
+    duration: "2h30",
+    rating: 4.8,
+    reviews: 223,
+    image: "https://i.pinimg.com/736x/b5/b5/77/b5b57799e1bf573dfb15c80873c406e0.jpg",
+    category: "tresses",
+    features: ["Effet doux", "Bouclé naturel", "Mouvement", "Look naturel"]
+  },
+  {
+    id: 10,
+    title: "Pop Smoke Braids",
+    description: "Tresses larges et symétriques. Style audacieux avec effet fumé unique.",
+    price: 170,
+    duration: "3h30",
+    rating: 4.7,
+    reviews: 156,
+    image: "https://i.pinimg.com/736x/c0/a6/c0/c0a6c0829cd31e892649e0d4e7e89aa4.jpg",
+    category: "tresses",
+    features: ["Tresses larges", "Symétriques", "Effet fumé", "Style audacieux"],
+    trending: true
+  },
+  {
+    id: 11,
+    title: "Balayage AirTouch",
+    description: "Technique de coloration la plus haut de gamme en 2026. On utilise un sèche-cheveux pour séparer les petits cheveux avant de colorer.",
+    price: 280,
+    duration: "4h",
+    rating: 4.9,
+    reviews: 312,
+    image: "https://i.pinimg.com/1200x/e6/f7/1c/e6f71ce5382c31afb3fee42602113024.jpg",
+    category: "coloration",
+    features: ["Blond ultra-fondu", "Repiose sans démarcation", "Parfait femmes occupées", "Technique 2026"],
+    premium: true,
+    bestseller: true
+  },
+  {
+    id: 12,
+    title: "Rallonges Invisible Tape-In",
+    description: "Extensions adhésives ultra-fines qui ne se voient pas, même avec les cheveux attachés.",
+    price: 220,
+    duration: "2h30",
+    rating: 4.8,
     reviews: 267,
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600",
-    category: "coiffage",
-    features: ["Brushing professionnel", "Produits luxe", "Coiffage élégant", "Tenue garantie"]
+    image: "https://i.pinimg.com/1200x/c7/9b/e1/c79be157d84b2c926b357fc27d72be1d.jpg",
+    category: "extensions",
+    features: ["Ultra-fines", "Invisibles", "Volume instantané", "Parfait rue Peel"],
+    trending: true
+  },
+  {
+    id: 13,
+    title: "Lissage au Tanin (Taninoplastie)",
+    description: "Plus naturel que le lissage brésilien, il répare la fibre tout en lissant.",
+    price: 180,
+    duration: "3h",
+    rating: 4.9,
+    reviews: 289,
+    image: "https://i.pinimg.com/1200x/27/52/94/275294340a6960cb09761a153c29c6ef.jpg",
+    category: "lissage",
+    features: ["Répare la fibre", "Combat humidité", "Plus naturel", "Été québécois"],
+    premium: true
+  },
+  {
+    id: 14,
+    title: "Silk Press de Luxe",
+    description: "Lissage thermique sur cheveux naturels pour un fini soyeux et brillant sans produits chimiques permanents.",
+    price: 120,
+    duration: "2h",
+    rating: 4.7,
+    reviews: 198,
+    image: "https://i.pinimg.com/1200x/7c/b3/62/7cb3627130aee2ce8fd06c6fa4085f61.jpg",
+    category: "lissage",
+    features: ["Fini soyeux", "Brillant", "Sans chimiques", "Change look temporairement"],
+    popular: true
+  },
+
+  {
+    id: 17,
+    title: "Coloration Money Piece & Gloss",
+    description: "On décolore uniquement les deux mèches devant le visage pour illuminer le regard, suivi d'un gloss pour la brillance.",
+    price: 140,
+    duration: "2h",
+    rating: 4.7,
+    reviews: 178,
+    image: "https://i.pinimg.com/1200x/0b/4d/f1/0b4df108fce822434d6426d9ad33de8d.jpg",
+    category: "coloration",
+    features: ["Illumine le regard", "Rapide et efficace", "Moins coûteux", "Très stylé"],
+    popular: true
   }
 ];
 
 const categories = [
   { id: 'all', name: 'Tous les services', icon: <Filter fontSize="small" /> },
-  { id: 'coupe', name: 'Coupe', icon: <Star fontSize="small" /> },
+  { id: 'tresses', name: 'Tresses & Braids', icon: <Star fontSize="small" /> },
   { id: 'coloration', name: 'Coloration', icon: <Star fontSize="small" /> },
-  { id: 'soins', name: 'Soins', icon: <Star fontSize="small" /> },
-  { id: 'forfait', name: 'Forfaits', icon: <Star fontSize="small" /> }
+  { id: 'extensions', name: 'Extensions', icon: <Star fontSize="small" /> },
+  { id: 'lissage', name: 'Lissage', icon: <Star fontSize="small" /> },
+  { id: 'popular', name: 'Populaires', icon: <Star fontSize="small" /> },
+  { id: 'trending', name: 'Tendances', icon: <Star fontSize="small" /> },
+  { id: 'premium', name: 'Premium', icon: <Star fontSize="small" /> }
 ];
 
 export default function Services() {
@@ -94,18 +213,31 @@ export default function Services() {
 
   const filteredServices = selectedCategory === 'all' 
     ? servicesData 
+    : selectedCategory === 'popular'
+    ? servicesData.filter(service => service.popular)
+    : selectedCategory === 'trending'
+    ? servicesData.filter(service => service.trending)
+    : selectedCategory === 'premium'
+    ? servicesData.filter(service => service.premium)
     : servicesData.filter(service => service.category === selectedCategory);
 
   const handleWhatsAppBooking = (service) => {
     const message = encodeURIComponent(`Bonjour, je souhaite prendre rendez-vous pour : ${service.title}\n\n💰 Prix : ${service.price}$\n⏱️ Durée : ${service.duration}\n\nMerci de me confirmer la disponibilité.`);
-    window.open(`https://wa.me/33612345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/15149986842?text=${message}`, '_blank');
   };
 
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
       {/* Header Section */}
       <section className="relative h-[40vh] flex items-center justify-center bg-[#0A0A0A] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] opacity-90"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: "url('https://i.pinimg.com/736x/37/6f/4b/376f4be86d72e917e334290b6f6debab.jpg')",
+            backgroundPosition: 'center 30%'
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A]/90 via-[#0A0A0A]/70 to-[#1A1A1A]/90"></div>
         <div className="relative z-10 text-center text-white px-6">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}

@@ -31,10 +31,10 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F9F9F9]">
+    <div className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center bg-[#1B3022] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1B3022] to-[#152418] opacity-90"></div>
+      <section className="relative h-[60vh] flex items-center justify-center bg-[#0A0A0A] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] opacity-90"></div>
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600" 
@@ -55,7 +55,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-[#C5A059] font-medium leading-relaxed"
+            className="text-xl text-[#D4AF37] font-medium leading-relaxed"
           >
             Depuis 2014, nous sublimons votre beauté naturelle avec expertise et passion
           </motion.p>
@@ -72,38 +72,38 @@ export default function About() {
               viewport={{ once: true }}
             >
               <h2 
-                className="text-3xl md:text-5xl font-black text-[#1B3022] mb-4"
+                className="text-3xl md:text-5xl font-black text-white mb-4"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
                 L'Excellence au Service de la Beauté à Domicile
               </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-[#E5E5E5] mb-6 leading-relaxed">
                 Fondée en 2014 par Sophie Laurent, Beauty Shop est né d'une vision : apporter des soins de beauté 
                 d'exception directement chez vous. Notre philosophie repose sur l'alliance parfaite 
                 entre traditions et innovations, produits bio et techniques de pointe, le tout dans le confort de votre domicile.
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-[#E5E5E5] mb-8 leading-relaxed">
                 Chaque jour, nous nous engageons à vous offrir une expérience unique où votre bien-être est au 
                 cœur de nos préoccupations. Notre équipe d'experts dédiés se déplace pour vous accompagner avec conseil personnalisé 
                 et savoir-faire artisanal, directement chez vous.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-[#C5A059] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center">
                     <Favorite fontSize="small" />
                   </div>
                   <div>
-                    <div className="text-2xl font-black text-[#1B3022]">99%</div>
-                    <div className="text-sm text-gray-600">Satisfaction</div>
+                    <div className="text-2xl font-black text-white">99%</div>
+                    <div className="text-sm text-[#E5E5E5]">Satisfaction</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-[#1B3022] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#D4AF37] rounded-full flex items-center justify-center">
                     <People fontSize="small" className="text-white" />
                   </div>
                   <div>
-                    <div className="text-2xl font-black text-[#1B3022]">5000+</div>
-                    <div className="text-sm text-gray-600">Clientes</div>
+                    <div className="text-2xl font-black text-white">5000+</div>
+                    <div className="text-sm text-[#E5E5E5]">Clientes</div>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function About() {
                 alt="Notre Salon" 
                 className="rounded-3xl shadow-2xl w-full"
               />
-              <div className="absolute -bottom-6 -right-6 bg-[#C5A059] text-white p-6 rounded-3xl shadow-xl">
+              <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] text-white p-6 rounded-3xl shadow-xl">
                 <div className="text-3xl font-black mb-2">10+</div>
                 <div className="text-sm">Ans d'Excellence</div>
               </div>
@@ -172,18 +172,18 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow text-center"
+                className="bg-[#1A1A1A] border border-[#E5E5E5]/20 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow text-center"
               >
-                <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-6 text-white">
                   {value.icon}
                 </div>
                 <h3 
-                  className="text-xl font-bold text-[#1B3022] mb-4"
+                  className="text-xl font-bold text-white mb-4"
                   style={{ fontFamily: 'Playfair Display, serif' }}
                 >
                   {value.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-[#E5E5E5] leading-relaxed">
                   {value.description}
                 </p>
               </motion.div>
@@ -213,7 +213,7 @@ export default function About() {
           </motion.div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#E8E2D9]"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#E5E5E5]/20"></div>
             {milestones.map((milestone, index) => (
               <motion.div
                 key={index}
@@ -226,18 +226,18 @@ export default function About() {
                 }`}
               >
                 <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
-                  <div className="bg-white p-6 rounded-3xl shadow-lg">
-                    <div className="text-2xl font-black text-[#C5A059] mb-2">{milestone.year}</div>
+                  <div className="bg-[#1A1A1A] border border-[#E5E5E5]/20 p-6 rounded-3xl shadow-lg">
+                    <div className="text-2xl font-black text-[#D4AF37] mb-2">{milestone.year}</div>
                     <h3 
-                      className="text-lg font-bold text-[#1B3022] mb-2"
+                      className="text-lg font-bold text-white mb-2"
                       style={{ fontFamily: 'Playfair Display, serif' }}
                     >
                       {milestone.title}
                     </h3>
-                    <p className="text-gray-600">{milestone.description}</p>
+                    <p className="text-[#E5E5E5]">{milestone.description}</p>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#C5A059] rounded-full border-4 border-white"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#D4AF37] rounded-full border-4 border-white"></div>
               </motion.div>
             ))}
           </div>
@@ -272,7 +272,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow text-center"
+                className="bg-[#1A1A1A] border border-[#E5E5E5]/20 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow text-center"
               >
                 <img 
                   src={member.image} 
@@ -281,13 +281,13 @@ export default function About() {
                 />
                 <div className="p-6">
                   <h3 
-                    className="text-xl font-bold text-[#1B3022] mb-2"
+                    className="text-xl font-bold text-white mb-2"
                     style={{ fontFamily: 'Playfair Display, serif' }}
                   >
                     {member.name}
                   </h3>
-                  <p className="text-[#C5A059] font-medium mb-2">{member.role}</p>
-                  <p className="text-sm text-gray-600">{member.experience} d'expérience</p>
+                  <p className="text-[#D4AF37] font-medium mb-2">{member.role}</p>
+                  <p className="text-sm text-[#E5E5E5]">{member.experience} d'expérience</p>
                 </div>
               </motion.div>
             ))}
@@ -296,7 +296,7 @@ export default function About() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-[#1B3022] text-white">
+      <section className="py-20 bg-[#0A0A0A] text-white">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -323,11 +323,11 @@ export default function About() {
               transition={{ delay: 0.1 }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone fontSize="small" />
               </div>
               <h3 className="text-lg font-bold mb-2">Téléphone</h3>
-              <p className="text-gray-300">+33 6 12 34 56 78</p>
+              <p className="text-gray-300">+1 (514) 998-6842</p>
             </motion.div>
 
             <motion.div
@@ -337,11 +337,11 @@ export default function About() {
               transition={{ delay: 0.2 }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail fontSize="small" />
               </div>
               <h3 className="text-lg font-bold mb-2">Email</h3>
-              <p className="text-gray-300">contact@beauty-domicile.fr</p>
+              <p className="text-gray-300">contact@beauty-shop.ca</p>
             </motion.div>
 
             <motion.div
@@ -351,11 +351,11 @@ export default function About() {
               transition={{ delay: 0.3 }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <LocationOn fontSize="small" />
               </div>
               <h3 className="text-lg font-bold mb-2">Adresse</h3>
-              <p className="text-gray-300">Service à domicile<br />Paris et région parisienne</p>
+              <p className="text-gray-300">Service à domicile<br />Montréal et région</p>
             </motion.div>
           </div>
 
@@ -367,8 +367,8 @@ export default function About() {
             className="text-center mt-12"
           >
             <button
-              onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous', '_blank')}
-              className="bg-[#C5A059] text-white px-8 py-4 rounded-full font-medium hover:bg-[#B8944F] transition-colors inline-flex items-center space-x-2"
+              onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous', '_blank')}
+              className="bg-[#D4AF37] text-white px-8 py-4 rounded-full font-medium hover:bg-[#B89430] transition-colors inline-flex items-center space-x-2"
             >
               <AutoAwesome fontSize="small" />
               <span>Réserver sur WhatsApp</span>

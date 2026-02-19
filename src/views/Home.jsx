@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ContentCut, Star, Phone, WhatsApp } from '@mui/icons-material';
 import Footer from '../components/Footer';
 
-const heroImageUrl = "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600";
+const heroImageUrl = "https://i.pinimg.com/736x/54/97/13/549713fb214f17fdd04bf0341e1c7532.jpg";
 
 export default function Home() {
   return (
@@ -89,21 +89,21 @@ export default function Home() {
                 title: 'Coupe & Style',
                 description: 'Coupe sur mesure avec styling professionnel pour un look unique',
                 price: 'À partir de 120$',
-                image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=400'
+                image: 'https://i.pinimg.com/736x/8f/bb/46/8fbb46ef1a4d5ae66b0e5a075318ff4d.jpg'
               },
               {
                 id: 2,
                 title: 'Coloration Expert',
                 description: 'Coloration premium avec produits haut de gamme et soin complet',
                 price: 'À partir de 180$',
-                image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=400'
+                image: 'https://i.pinimg.com/736x/82/80/ef/8280ef50820d6d2d330b15e45378a742.jpg'
               },
               {
                 id: 3,
                 title: 'Soins Capillaires',
                 description: 'Soins profonds pour la santé et la beauté de vos cheveux',
                 price: 'À partir de 90$',
-                image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=400'
+                image: 'https://i.pinimg.com/1200x/5e/d3/49/5ed3496165903b919724ab41147f82b2.jpg'
               }
             ].map((service, index) => (
               <motion.div
@@ -127,7 +127,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-black text-[#D4AF37]" style={{ fontFamily: 'Playfair Display, serif' }}>{service.price}</span>
                   <button 
-                    onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite réserver un service', '_blank')}
+                    onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite réserver un service', '_blank')}
                     className="bg-[#D4AF37] text-white px-6 py-3 rounded-full font-medium hover:bg-[#B89430] transition-colors"
                   >
                     <Phone fontSize="small" />
@@ -200,7 +200,7 @@ export default function Home() {
                 </div>
                 <div className="border-t border-[#E5E5E5]/20 pt-4"></div>
                 <button 
-                  onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite réserver un service', '_blank')}
+                  onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite réserver un service', '_blank')}
                   className="w-full bg-[#D4AF37] text-white px-6 py-3 rounded-full font-medium hover:bg-[#B89430] transition-colors"
                 >
                   Réserver sur WhatsApp
@@ -281,7 +281,7 @@ export default function Home() {
       
       {/* Floating WhatsApp Button */}
       <button 
-        onClick={() => window.open('https://wa.me/33612345678?text=Bonjour, je souhaite prendre rendez-vous', '_blank')}
+        onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous', '_blank')}
         className="fixed bottom-8 right-8 bg-[#D4AF37] text-white p-4 rounded-full shadow-lg hover:bg-[#B89430] transition-all duration-300 z-50 hover:scale-110"
       >
         <WhatsApp fontSize="large" />

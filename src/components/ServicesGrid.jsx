@@ -74,7 +74,7 @@ const services = [
 export default function ServicesGrid() {
   const handleWhatsAppBooking = (serviceTitle) => {
     const message = encodeURIComponent(`Bonjour, je souhaite prendre rendez-vous pour : ${serviceTitle}`);
-    window.open(`https://wa.me/33612345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/15149986842?text=${message}`, '_blank');
   };
 
   return (

@@ -8,7 +8,7 @@ export default function Products() {
 
   const handleOrderProduct = (product) => {
     const message = `Bonjour, je souhaite commander le produit suivant:\n\n📦 *Référence Produit*\n\n🏷️ *Nom*: ${product.name}\n🏢 *Marque*: ${product.brand}\n💰 *Prix*: ${product.price}$\n📝 *Description*: ${product.description}\n\nPouvez-vous me confirmer la disponibilité et les modalités de livraison au Canada ?`;
-    window.open(`https://wa.me/33612345678?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/15149986842?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleToggleFavorite = (product) => {
@@ -21,174 +21,289 @@ export default function Products() {
     }
   };
 
-  // Produits pour tresses spécialisés pour le marché canadien
+  // Nouvelle liste de produits spécialisés
   const products = [
-    // EXTENSIONS DE CHEVEUX
+    // 🧴 SOINS ET HUILES (Le "Liquid Gold")
     {
       id: 1,
-      name: "Extensions Box Braids",
-      brand: "Premium Hair Canada",
-      price: 45.99,
-      originalPrice: 55.99,
-      rating: 4.8,
-      reviews: 234,
-      category: "extensions",
-      image: "https://i.pinimg.com/736x/8b/3e/4a/8b3e4a1c2f3d4e5f6a7b8c9d0e1f2g3.jpg",
-      description: "Extensions de haute qualité pour box braids, texture naturelle adaptée au climat canadien",
-      popular: true,
-      local: true
+      name: "Huile Elixir Ultime (Kérastase)",
+      brand: "Kérastase",
+      price: 65.99,
+      originalPrice: 79.99,
+      rating: 4.9,
+      reviews: 312,
+      category: "soins",
+      image: "https://i.pinimg.com/1200x/08/99/82/089982b94e3a38c84fea093913d4dc92.jpg",
+      description: "L'icône absolue pour la brillance.",
+      premium: true
     },
     {
       id: 2,
-      name: "Extensions Knotless",
-      brand: "Quebec Hair Pro",
-      price: 52.99,
-      originalPrice: 65.99,
-      rating: 4.9,
-      reviews: 189,
-      category: "extensions",
-      image: "https://i.pinimg.com/736x/a1/b2/c3/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p.jpg",
-      description: "Extensions premium pour tresses knotless, sans tension sur cuir chevelu",
-      popular: true,
+      name: "Huile de traitement Maroccanoil",
+      brand: "Maroccanoil",
+      price: 28.99,
+      originalPrice: 35.99,
+      rating: 4.7,
+      reviews: 245,
+      category: "soins",
+      image: "https://i.pinimg.com/1200x/27/e6/73/27e67394490d61a3238bd2ce84a8c029.jpg",
+      description: "Incontournable pour nourrir les pointes sèches.",
       local: true
     },
     {
       id: 3,
-      name: "Extensions Colored",
-      brand: "Toronto Beauty Supply",
-      price: 48.99,
-      originalPrice: 58.99,
-      rating: 4.7,
-      reviews: 156,
-      category: "extensions",
-      image: "https://i.pinimg.com/736x/c1/d2/e3/c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5.jpg",
-      description: "Extensions colorées tendance 2026, large choix de couleurs pour tresses stylées",
-      popular: true
+      name: "Huile capillaire infusée au miel (Gisou)",
+      brand: "Gisou",
+      price: 32.99,
+      originalPrice: 39.99,
+      rating: 4.8,
+      reviews: 189,
+      category: "soins",
+      image: "https://i.pinimg.com/736x/19/2f/cb/192fcb1bb91c1703d400196b59948dc5.jpg",
+      description: "Très virale sur les réseaux sociaux, parfaite pour l'aspect esthétique du site.",
+      trending: true
     },
-    // PRODUITS D'ENTRETIEN
     {
       id: 4,
-      name: "Soin Avant Tresses",
-      brand: "Montreal Hair Care",
-      price: 28.99,
-      originalPrice: 35.99,
-      rating: 4.8,
-      reviews: 267,
-      category: "soins",
-      image: "https://i.pinimg.com/736x/e1/f2/g3/e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5.jpg",
-      description: "Traitement pré-tresses pour cuir chevelu, adapté au froid québécois",
-      local: true
-    },
-    {
-      id: 5,
-      name: "Huile Entretien Tresses",
-      brand: "Vancouver Beauty Co",
-      price: 22.99,
-      originalPrice: 28.99,
-      rating: 4.6,
-      reviews: 198,
-      category: "soins",
-      image: "https://i.pinimg.com/736x/f1/g2/h3/f1g2h3i4j5k6l7m8n9o0p1q2r3s4t5.jpg",
-      description: "Huile légère pour entretien quotidien des tresses, ne graisse pas"
-    },
-    {
-      id: 6,
-      name: "Shampooing Doux Tresses",
-      brand: "Calgary Hair Labs",
-      price: 18.99,
-      originalPrice: 24.99,
-      rating: 4.7,
-      reviews: 145,
-      category: "soins",
-      image: "https://i.pinimg.com/736x/h1/i2/j3/h1i2j3k4l5m6n7o8p9q0r1s2t3u4v5.jpg",
-      description: "Shampooing sans sulfates pour nettoyer tresses sans les abîmer"
-    },
-    // ACCESSOIRES TRESSES
-    {
-      id: 7,
-      name: "Kit Crochet Professionnel",
-      brand: "Ottawa Beauty Tools",
-      price: 15.99,
-      originalPrice: 20.99,
+      name: "Sérum de croissance au Romarin (Mielle)",
+      brand: "Mielle",
+      price: 45.99,
+      originalPrice: 55.99,
       rating: 4.9,
-      reviews: 312,
-      category: "outils",
-      image: "https://i.pinimg.com/736x/i1/j2/k3/i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5.jpg",
-      description: "Kit crochet complet pour installation tresses, qualité professionnelle",
-      popular: true
-    },
-    {
-      id: 8,
-      name: "Bandeaux Élastiques Tresses",
-      brand: "Edmonton Hair Accessories",
-      price: 8.99,
-      originalPrice: 12.99,
-      rating: 4.5,
-      reviews: 178,
-      category: "outils",
-      image: "https://i.pinimg.com/736x/j1/k2/l3/j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5.jpg",
-      description: "Pack de 50 bandeaux élastiques pour tresses, plusieurs couleurs"
-    },
-    // PRODUITS SPÉCIALISÉS
-    {
-      id: 9,
-      name: "Sérum Anti-Démangeaisons",
-      brand: "Winnipeg Derm Care",
-      price: 24.99,
-      originalPrice: 32.99,
-      rating: 4.8,
-      reviews: 234,
+      reviews: 428,
       category: "soins",
-      image: "https://i.pinimg.com/736x/k1/l2/m3/k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5.jpg",
-      description: "Sérum apaisant pour démangeaisons sous tresses, cuir chevelu sain",
+      image: "https://i.pinimg.com/736x/1f/a7/1c/1fa71c16c95a9448a92a868f87d4685d.jpg",
+      description: "Le produit phare pour la densité capillaire.",
       bestseller: true
     },
     {
-      id: 10,
-      name: "Mousse Coiffante Tresses",
-      brand: "Halifax Styling Co",
-      price: 12.99,
-      originalPrice: 16.99,
+      id: 5,
+      name: "Huile protectrice thermique (Bumble and Bumble)",
+      brand: "Bumble and Bumble",
+      price: 38.99,
+      originalPrice: 46.99,
       rating: 4.6,
       reviews: 167,
       category: "soins",
-      image: "https://i.pinimg.com/736x/l1/m2/n3/l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5.jpg",
-      description: "Mousse légère pour coiffer et fixer les tresses sans effet cartonné"
+      image: "https://i.pinimg.com/1200x/ed/f6/32/edf63251c1764b2ed62cdd5f48d73f0b.jpg",
+      description: "Indispensable avant chaque brushing."
+    },
+
+    // 💇‍♀️ ACCESSOIRES DE COIFFAGE (Outils Pro)
+    {
+      id: 6,
+      name: "Brosses Mason Pearson",
+      brand: "Mason Pearson",
+      price: 189.99,
+      originalPrice: 229.99,
+      rating: 4.9,
+      reviews: 89,
+      category: "outils",
+      image: "https://i.pinimg.com/736x/66/e7/6c/66e76cfe2da4e33ec971502f29f4f67e.jpg",
+      description: "Le grand luxe du brossage (très cher, très chic).",
+      premium: true
     },
     {
-      id: 11,
-      name: "Spray Rafraîchissant",
-      brand: "Victoria Beauty Fresh",
-      price: 16.99,
-      originalPrice: 21.99,
+      id: 7,
+      name: "Peigne à dents larges en acétate",
+      brand: "Professional Tools",
+      price: 24.99,
+      originalPrice: 32.99,
       rating: 4.7,
-      reviews: 189,
-      category: "soins",
-      image: "https://i.pinimg.com/736x/m1/n2/o3/m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5.jpg",
-      description: "Spray rafraîchissant pour tresses entre les lavages, senteur fraîche"
+      reviews: 134,
+      category: "outils",
+      image: "https://i.pinimg.com/1200x/1c/58/06/1c580664b424dabbcb3c321e77fcda9c.jpg",
+      description: "Pour démêler sous la douche sans casser le cheveu.",
+      essential: true
+    },
+    {
+      id: 8,
+      name: "Peigne à queue en carbone",
+      brand: "Carbon Pro",
+      price: 34.99,
+      originalPrice: 42.99,
+      rating: 4.8,
+      reviews: 201,
+      category: "outils",
+      image: "https://i.pinimg.com/736x/0c/a9/33/0ca933595ddb64490f1a0f6f688fd8e1.jpg",
+      description: "L'outil de précision pour les séparations et les tresses.",
+      professional: true
+    },
+    {
+      id: 9,
+      name: "Brosse ronde en céramique (Olivia Garden)",
+      brand: "Olivia Garden",
+      price: 67.99,
+      originalPrice: 85.99,
+      rating: 4.8,
+      reviews: 156,
+      category: "outils",
+      image: "https://i.pinimg.com/736x/44/c4/1d/44c41dbfae7a122e5966e69a03e1f3b9.jpg",
+      description: "Pour des brushings volumineux comme en salon.",
+      popular: true
+    },
+    {
+      id: 10,
+      name: "Brosse démêlante flexible (Wet Brush)",
+      brand: "Wet Brush",
+      price: 42.99,
+      originalPrice: 52.99,
+      rating: 4.7,
+      reviews: 223,
+      category: "outils",
+      image: "https://i.pinimg.com/736x/75/b4/7e/75b47e0c6e54865756b77a9716ffdf3f.jpg",
+      description: "Douce pour les cheveux fragiles.",
+      trending: true
+    },
+
+    // 🧵 MÈCHES ET EXTENSIONS (Le volume et la longueur)
+    {
+      id: 11,
+      name: "Extensions à clips en cheveux naturels (Bellami)",
+      brand: "Bellami",
+      price: 125.99,
+      originalPrice: 159.99,
+      rating: 4.8,
+      reviews: 267,
+      category: "extensions",
+      image: "https://i.pinimg.com/1200x/69/03/21/6903217b2ffa28c168b33bd18cd5126a.jpg",
+      description: "Pour changer de tête en 5 minutes.",
+      popular: true
     },
     {
       id: 12,
-      name: "Protège-Tresses Nuit",
-      brand: "Toronto Sleep Care",
-      price: 19.99,
-      originalPrice: 25.99,
-      rating: 4.8,
-      reviews: 223,
-      category: "outils",
-      image: "https://i.pinimg.com/736x/n1/o2/p3/n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5.jpg",
-      description: "Bonnet en soie pour protéger tresses pendant la nuit, prévient casse",
+      name: "Mèches de luxe pour Balayage",
+      brand: "Luxury Hair",
+      price: 89.99,
+      originalPrice: 119.99,
+      rating: 4.9,
+      reviews: 198,
+      category: "extensions",
+      image: "https://i.pinimg.com/1200x/a6/3a/a6/a63aa6f7041bdd45bc85c39752d13c6b.jpg",
+      description: "Extensions pré-colorées pour un effet soleil immédiat.",
+      premium: true
+    },
+    {
+      id: 13,
+      name: "Mèches pour tresses (X-Pression Premium)",
+      brand: "X-Pression",
+      price: 76.99,
+      originalPrice: 95.99,
+      rating: 4.7,
+      reviews: 312,
+      category: "extensions",
+      image: "https://i.pinimg.com/736x/9b/ce/ea/9bceeadc24144d3b28a497338854d632.jpg",
+      description: "Très demandées à Montréal pour les styles protecteurs.",
+      local: true,
+      trending: true
+    },
+    {
+      id: 14,
+      name: "Queue de cheval (Ponytail) prête à poser",
+      brand: "Ponytail Pro",
+      price: 45.99,
+      originalPrice: 58.99,
+      rating: 4.6,
+      reviews: 145,
+      category: "extensions",
+      image: "https://i.pinimg.com/736x/db/72/23/db722305c60cf59569a5a3ff7a3983ef.jpg",
+      description: "Le secret des coiffures sophistiquées rapides.",
       popular: true
+    },
+
+    // 🎀 ACCESSOIRES DE MODE & ENTRETIEN
+    {
+      id: 15,
+      name: "Chouchous en soie (Scrunchies)",
+      brand: "Silk Luxury",
+      price: 28.99,
+      originalPrice: 35.99,
+      rating: 4.8,
+      reviews: 234,
+      category: "accessoires",
+      image: "https://i.pinimg.com/736x/21/14/9a/21149a47c11e6632f8b3e4e5e0801f22.jpg",
+      description: "Évitent la casse des cheveux pendant la nuit.",
+      premium: true
+    },
+    {
+      id: 16,
+      name: "Bonnet de nuit en satin",
+      brand: "Satin Care",
+      price: 22.99,
+      originalPrice: 28.99,
+      rating: 4.7,
+      reviews: 189,
+      category: "accessoires",
+      image: "https://i.pinimg.com/1200x/6b/2d/1e/6b2d1ec5dcc30c0ccb171bd21900f17e.jpg",
+      description: "Indispensable pour garder le lissage ou les boucles intactes.",
+      essential: true
+    },
+    {
+      id: 17,
+      name: "Pinces crocodiles professionnelles",
+      brand: "Pro Clips",
+      price: 18.99,
+      originalPrice: 24.99,
+      rating: 4.6,
+      reviews: 156,
+      category: "accessoires",
+      image: "https://i.pinimg.com/1200x/2d/e8/5d/2de85db27406e718e7e72b486d3b80c8.jpg",
+      description: "Pour sectionner les cheveux lors du coiffage à la maison.",
+      professional: true
+    },
+    {
+      id: 18,
+      name: "Bandeau de soin en éponge",
+      brand: "Care Band",
+      price: 15.99,
+      originalPrice: 19.99,
+      rating: 4.5,
+      reviews: 98,
+      category: "accessoires",
+      image: "https://i.pinimg.com/736x/ed/16/c9/ed16c9e79fe87ca9b23d75553332c77b.jpg",
+      description: "Pour dégager le visage lors de l'application de masques.",
+      trending: true
+    },
+
+    // ⚡ APPAREILS (Petit matériel)
+    {
+      id: 19,
+      name: "Sèche-cheveux Dyson Supersonic",
+      brand: "Dyson",
+      price: 549.99,
+      originalPrice: 629.99,
+      rating: 4.9,
+      reviews: 445,
+      category: "appareils",
+      image: "https://i.pinimg.com/1200x/03/af/d2/03afd27b872ac0670ce7f815007b6155.jpg",
+      description: "Le symbole ultime du luxe technologique en salon.",
+      premium: true,
+      bestseller: true
+    },
+    {
+      id: 20,
+      name: "Fer à boucler automatique (BaByliss PRO)",
+      brand: "BaByliss",
+      price: 189.99,
+      originalPrice: 229.99,
+      rating: 4.7,
+      reviews: 167,
+      category: "appareils",
+      image: "https://i.pinimg.com/736x/c3/bf/df/c3bfdf6a85c235bdadbfd8e155073714.jpg",
+      description: "Pour des ondulations 'Beach Waves' sans effort.",
+      trending: true
     }
   ];
 
   const categories = [
     { id: 'all', name: 'Tous les produits', icon: <LocalOffer fontSize="small" /> },
-    { id: 'extensions', name: 'Extensions', icon: <Star fontSize="small" /> },
-    { id: 'soins', name: 'Soins Tresses', icon: <Favorite fontSize="small" /> },
-    { id: 'outils', name: 'Accessoires', icon: <LocalOffer fontSize="small" /> },
-    { id: 'locaux', name: 'Made in Canada', icon: <Star fontSize="small" /> },
-    { id: 'bestsellers', name: 'Best Sellers', icon: <LocalOffer fontSize="small" /> }
+    { id: 'soins', name: 'Soins & Huiles', icon: <Star fontSize="small" /> },
+    { id: 'outils', name: 'Outils Pro', icon: <LocalOffer fontSize="small" /> },
+    { id: 'extensions', name: 'Mèches & Extensions', icon: <Star fontSize="small" /> },
+    { id: 'accessoires', name: 'Accessoires', icon: <Favorite fontSize="small" /> },
+    { id: 'appareils', name: 'Appareils', icon: <LocalOffer fontSize="small" /> },
+    { id: 'premium', name: 'Premium', icon: <Star fontSize="small" /> },
+    { id: 'locaux', name: 'Made in Canada', icon: <Star fontSize="small" /> }
   ];
 
   const filteredProducts = selectedCategory === 'all' 
@@ -202,8 +317,16 @@ export default function Products() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
       {/* Header */}
-      <section className="bg-[#0A0A0A] text-white py-20">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="relative h-[40vh] flex items-center justify-center bg-[#0A0A0A] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: "url('https://i.pinimg.com/736x/e7/3f/26/e73f263dde3bdd10350fe374ab43170a.jpg')",
+            backgroundPosition: 'center 35%'
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A]/90 via-[#0A0A0A]/70 to-[#1A1A1A]/90"></div>
+        <div className="relative z-10 text-center text-white px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -357,25 +480,30 @@ export default function Products() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center p-8 bg-[#F9F9F9] rounded-3xl">
-              <div className="text-4xl mb-4">🍁</div>
-              <h3 className="text-xl font-bold text-[#1B3022] mb-2">Made in Québec</h3>
-              <p className="text-gray-600">Marques locales comme Watier, IDC Dermo, Zorah pour renforcer la confiance de la clientèle montréalaise</p>
+            <div className="text-center p-8 bg-[#0A0A0A] rounded-3xl border border-[#E5E5E5]/20">
+              <div className="text-4xl mb-4">🧴</div>
+              <h3 className="text-xl font-bold text-white mb-2">Liquid Gold</h3>
+              <p className="text-[#E5E5E5]">Les huiles capillaires sont les nouveaux produits iconiques du marché</p>
             </div>
-            <div className="text-center p-8 bg-[#F9F9F9] rounded-3xl">
-              <div className="text-4xl mb-4">✨</div>
-              <h3 className="text-xl font-bold text-[#1B3022] mb-2">Healthy Glow</h3>
-              <p className="text-gray-600">Le marché privilégie l'éclat sain plutôt que la couvrance totale en 2026</p>
+            <div className="text-center p-8 bg-[#0A0A0A] rounded-3xl border border-[#E5E5E5]/20">
+              <div className="text-4xl mb-4">💇‍♀️</div>
+              <h3 className="text-xl font-bold text-white mb-2">Outils Pro</h3>
+              <p className="text-[#E5E5E5]">Les accessoires professionnels sont indispensables pour un résultat salon</p>
             </div>
-            <div className="text-center p-8 bg-[#F9F9F9] rounded-3xl">
-              <div className="text-4xl mb-4">💡</div>
-              <h3 className="text-xl font-bold text-[#1B3022] mb-2">Bio-Adaptatifs</h3>
-              <p className="text-gray-600">Ingrédients innovants : Cactus, Figue de barbarie, et masques LED tendance à Montréal</p>
+            <div className="text-center p-8 bg-[#0A0A0A] rounded-3xl border border-[#E5E5E5]/20">
+              <div className="text-4xl mb-4">🧵</div>
+              <h3 className="text-xl font-bold text-white mb-2">Extensions Luxe</h3>
+              <p className="text-[#E5E5E5]">Le volume et la longueur en un clin d'œil</p>
             </div>
-            <div className="text-center p-8 bg-[#F9F9F9] rounded-3xl">
-              <div className="text-4xl mb-4">🌱</div>
-              <h3 className="text-xl font-bold text-[#1B3022] mb-2">Vegan & Zéro Déchet</h3>
-              <p className="text-gray-600">Produits BKIND pour les 25-35 ans, emballages compostables et formules véganes</p>
+            <div className="text-center p-8 bg-[#0A0A0A] rounded-3xl border border-[#E5E5E5]/20">
+              <div className="text-4xl mb-4">🎀</div>
+              <h3 className="text-xl font-bold text-white mb-2">Mode & Entretien</h3>
+              <p className="text-[#E5E5E5]">Les accessoires pour protéger et sublimer vos coiffures</p>
+            </div>
+            <div className="text-center p-8 bg-[#0A0A0A] rounded-3xl border border-[#E5E5E5]/20">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold text-white mb-2">Tech Beauty</h3>
+              <p className="text-[#E5E5E5]">Les appareils high-tech pour des résultats professionnels à domicile</p>
             </div>
           </div>
         </div>
