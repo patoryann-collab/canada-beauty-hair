@@ -1,0 +1,295 @@
+{
+
+  "nav": {
+
+    "home": "Home",
+
+    "products": "Shop",
+
+    "about": "About",
+
+    "contact": "Contact"
+
+  },
+
+  "home": {
+
+    "hero": {
+
+      "img_alt": "Premium silicone dolls collection",
+
+      "title_part1": "Discover our",
+
+      "title_part2": "Silicone",
+
+      "title_part3": "Dolls",
+
+      "subtitle": "Realistic and high-quality dolls for collectors and enthusiasts. Fast and secure delivery worldwide.",
+
+      "cta": "Explore Collection"
+
+    },
+
+    "slider": {
+
+      "quality_title": "Premium Quality",
+
+      "quality_subtitle": "Medical-grade silicone and hyper-realistic details for an unparalleled experience.",
+
+      "team_title": "Expert Artisans",
+
+      "team_subtitle": "Our talented creators bring each doll to life with passion and expertise.",
+
+      "eco_title": "Exclusive Collection",
+
+      "eco_subtitle": "Limited editions and unique pieces for discerning collectors.",
+
+      "indicator_1": "Quality",
+
+      "indicator_2": "Artisans",
+
+      "indicator_3": "Exclusive"
+
+    }
+
+  },
+
+  "products": {
+
+    "title": "Our Doll Shop",
+
+    "subtitle": "Unique creations for every collector.",
+
+    "cat_babies": "Baby Dolls",
+
+    "cat_toddlers": "Toddler Dolls",
+
+    "cat_special": "Limited Editions",
+
+    "cat_accessories": "Reborn Dolls",
+
+    "cat_custom": "Customizations"
+
+  },
+
+  "features": {
+
+    "title": "Why Dolls-Store?",
+
+    "f1_title": "Exceptional Quality",
+
+    "f1_text": "Each doll is crafted with premium medical-grade silicone and hand-painted.",
+
+    "f2_title": "Secure Delivery",
+
+    "f2_text": "Protective packaging and insured delivery worldwide.",
+
+    "f3_title": "Satisfaction Guaranteed",
+
+    "f3_text": "30-day return policy and warranty on all our products."
+
+  },
+
+  "process": {
+
+    "title": "How it works?",
+
+    "step1_title": "Choose",
+
+    "step1_text": "Browse our collection and find the perfect doll.",
+
+    "step2_title": "Order",
+
+    "step2_text": "Add to cart and proceed to secure payment.",
+
+    "step3_title": "Receive",
+
+    "step3_text": "Fast and careful delivery directly to your home."
+
+  },
+
+  "team": {
+
+    "title": "Our Artisans",
+
+    "subtitle": "The Dolls-Store creators",
+
+    "role_sculptor": "Sculptor",
+
+    "role_painter": "Painting Artist",
+
+    "role_designer": "Designer",
+
+    "role_customer": "Customer Service",
+
+    "role_specialist": "Silicone Specialist"
+
+  },
+
+  "footer": {
+
+    "description": "Creators of premium silicone dolls for collectors worldwide. Dolls-Store brings your dreams to life.",
+
+    "links_title": "Navigation",
+
+    "contact_title": "Contact Us",
+
+    "newsletter_title": "Newsletter",
+
+    "newsletter_btn": "Subscribe",
+
+    "rights": "All rights reserved.",
+
+    "shop_cta": "Visit Shop",
+
+    "designed_by": "Designed by"
+
+  },
+
+  "about": {
+
+    "title": "Silicone Doll Excellence",
+
+    "subtitle": "The art of realistic dolls at its peak",
+
+    "description": "Dolls-Store, European leader in creating realistic silicone dolls. Our mission is to create unique works of art that move and fascinate collectors.",
+
+    "stats": {
+
+      "satisfaction": "Satisfaction",
+
+      "quality": "Premium Quality",
+
+      "support": "24/7 Support",
+
+      "trust": "Certified Artisans",
+
+      "recognition": "European Excellence"
+
+    },
+
+    "materials": {
+
+      "title": "Materials & Quality",
+
+      "content": "We only use premium medical-grade silicone and non-toxic pigments. Every detail is hand-painted for unmatched realism.",
+
+      "silicone": "Premium Medical Silicone",
+
+      "paints": "Non-Toxic Paints",
+
+      "safety_label": "Child Safety Certifications"
+
+    },
+
+    "craftsmanship": {
+
+      "title": "Craftsmanship & Passion",
+
+      "content": "Each doll is created by our expert artisans with meticulous attention to detail. A manufacturing process that guarantees the uniqueness of each piece."
+
+    },
+
+    "collection": {
+
+      "title": "Exclusive Collections",
+
+      "content": "Limited editions created in collaboration with renowned artists. Each collection tells a unique story.",
+
+      "limited": "Limited Editions",
+
+      "artist": "Artistic Collaborations"
+
+    },
+
+    "award": {
+
+      "title": "International Recognition",
+
+      "content": "Awarded for the excellence of our creations, Dolls-Store is the reference in the world of premium collectible dolls."
+
+    }
+
+  },
+
+  "services": {
+
+    "title": "Our Collections",
+
+    "subtitle": "Explore our premium doll categories",
+
+    "cat_babies": "Baby Dolls",
+
+    "cat_toddlers": "Growing Kids", 
+
+    "cat_special": "Limited Editions",
+
+    "cat_accessories": "Reborn Dolls",
+
+    "cat_custom": "Customizations"
+
+  },
+
+  "contact": {
+
+    "title": "Contact Us",
+
+    "getInTouch": "Get in touch",
+
+    "info": "Contact Info",
+
+    "name": "Full Name",
+
+    "email": "Email",
+
+    "message": "Your message",
+
+    "send": "Send Message",
+
+    "success": "Message sent successfully!"
+
+  },
+
+  "success": {
+
+    "title": "It's done, {{name}}!",
+
+    "description": "Your order for the doll <1>{{product}}</1> has been successfully validated.",
+
+    "contact": "A Dolls-Store advisor will contact you shortly.",
+
+    "note": "A payment receipt has been sent to your email address. Keep it safe for your order tracking.",
+
+    "button": "Return to Shop"
+
+  },
+
+  "payment": {
+
+    "info_title": "Your Information",
+
+    "info_subtitle": "To complete your order",
+
+    "fullname": "Full Name",
+
+    "phone": "Phone Number",
+
+    "address": "Delivery Address",
+
+    "continue": "Continue to payment",
+
+    "pay_title": "Pay {{amount}} €",
+
+    "method_card": "Credit Card",
+
+    "method_paypal": "PayPal",
+
+    "proceed": "Proceed to payment",
+
+    "back": "← Edit my information",
+
+    "error_redirect": "Redirection error."
+
+  }
+
+}

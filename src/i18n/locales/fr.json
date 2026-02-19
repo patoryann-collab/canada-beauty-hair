@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Boutique",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "img_alt": "Collection de poupées silicone premium",
+      "title_part1": "Découvrez nos",
+      "title_part2": "Poupées",
+      "title_part3": "Silicone",
+      "subtitle": "Des poupées réalistes et de haute qualité pour collectionneurs et passionnés. Livraison rapide et sécurisée.",
+      "cta": "Explorer la Collection"
+    },
+    "slider": {
+      "quality_title": "Qualité Premium",
+      "quality_subtitle": "Silicone médical et détails hyper-réalistes pour une expérience incomparable.",
+      "team_title": "Artisans d'Exception",
+      "team_subtitle": "Nos maîtres artisans sculptent chaque poupée avec une précision inégalée et passion.",
+      "eco_title": "Collections Rares",
+      "eco_subtitle": "Éditions limitées et pièces uniques pour collectionneurs passionnés.",
+      "indicator_1": "Qualité",
+      "indicator_2": "Artisans",
+      "indicator_3": "Rares"
+    }
+  },
+  "products": {
+    "title": "Notre Boutique de Poupées",
+    "subtitle": "Des créations uniques pour chaque collectionneur.",
+    "cat_babies": "Bébés Silicone",
+    "cat_toddlers": "Jeunes Enfants",
+    "cat_special": "Éditions Limitées",
+    "cat_accessories": "Poupée Reborn",
+    "cat_custom": "Personnalisations"
+  },
+  "features": {
+    "title": "Pourquoi Dolls-Store ?",
+    "f1_title": "Qualité Exceptionnelle",
+    "f1_text": "Chaque poupée est fabriquée avec du silicone médical de première qualité et peinte à la main.",
+    "f2_title": "Livraison Sécurisée",
+    "f2_text": "Emballage protecteur et livraison assurée dans le monde entier.",
+    "f3_title": "Satisfaction Garantie",
+    "f3_text": "Retour possible sous 30 jours et garantie sur tous nos produits."
+  },
+  "process": {
+    "title": "Comment ça marche ?",
+    "step1_title": "Choisissez",
+    "step1_text": "Parcourez notre collection et trouvez la poupée parfaite.",
+    "step2_title": "Commandez",
+    "step2_text": "Ajoutez au panier et procédez au paiement sécurisé.",
+    "step3_title": "Recevez",
+    "step3_text": "Livraison rapide et soignée directement chez vous."
+  },
+  "team": {
+    "title": "Nos Artisans",
+    "subtitle": "Les créateurs Dolls-Store",
+    "role_sculptor": "Sculpteur",
+    "role_painter": "Artiste Peintre",
+    "role_designer": "Designer",
+    "role_customer": "Service Client",
+    "role_specialist": "Spécialiste Silicone"
+  },
+  "footer": {
+    "description": "Créateurs de poupées silicone premium pour collectionneurs du monde entier. Dolls-Store donne vie à vos rêves.",
+    "links_title": "Navigation",
+    "contact_title": "Nous Contacter",
+    "newsletter_title": "Newsletter",
+    "newsletter_btn": "S'abonner",
+    "rights": "Tous droits réservés.",
+    "shop_cta": "Visiter la Boutique",
+    "designed_by": "Conçu par"
+  },
+  "about": {
+    "title": "L'Excellence des Poupées Silicone",
+    "subtitle": "L'art de la poupée réaliste à son apogée",
+    "description": "Dolls-Store, leader européen dans la création de poupées silicone réalistes. Notre mission est de créer des œuvres d'art uniques qui émeuvent et fascinent les collectionneurs.",
+    "stats": {
+      "satisfaction": "Satisfaction",
+      "quality": "Qualité Premium",
+      "support": "Support 24/7",
+      "trust": "Artisans Certifiés",
+      "recognition": "Excellence Européenne"
+    },
+    "materials": {
+      "title": "Matériaux & Qualité",
+      "content": "Nous n'utilisons que du silicone médical de grade supérieur et des pigments non toxiques. Chaque détail est peint à la main pour un réalisme inégalé.",
+      "silicone": "Silicone Médical Premium",
+      "paints": "Peintures Non Toxiques",
+      "safety_label": "Certifications Sécurité Enfants"
+    },
+    "craftsmanship": {
+      "title": "Artisanat & Passion",
+      "content": "Chaque poupée est créée par nos artisans experts avec une attention méticuleuse aux détails. Un processus de fabrication qui garantit l'unicité de chaque pièce."
+    },
+    "collection": {
+      "title": "Collections Exclusives",
+      "content": "Des éditions limitées créées en collaboration avec des artistes renommés. Chaque collection raconte une histoire unique.",
+      "limited": "Éditions Limitées",
+      "artist": "Collaborations Artistiques"
+    },
+    "award": {
+      "title": "Reconnaissance Internationale",
+      "content": "Récompensés pour l'excellence de nos créations, Dolls-Store est la référence dans le monde des poupées collection premium.",
+      "new_award": "Nouveau prix obtenu"
+    }
+  },
+  "services": {
+    "title": "Nos Collections",
+    "subtitle": "Explorez nos catégories de poupées premium",
+    "cat_babies": "Bébés Silicone",
+    "cat_toddlers": "Enfants en Croissance", 
+    "cat_special": "Éditions Limitées",
+    "cat_accessories": "Poupée Reborn",
+    "cat_custom": "Personnalisations"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "getInTouch": "Contactez-nous",
+    "info": "Informations",
+    "name": "Nom complet",
+    "email": "Email",
+    "message": "Votre message",
+    "send": "Envoyer le message",
+    "success": "Message envoyé avec succès !",
+    "new_field": "Nouveau champ de formulaire"
+  },
+  "success": {
+    "title": "C'est fait, {{name}} !",
+    "description": "Votre commande pour la poupée <1>{{product}}</1> a été validée avec succès.",
+    "contact": "Un conseiller Dolls-Store vous contactera d'ici peu.",
+    "note": "Un reçu de paiement a été envoyé à votre adresse email. Gardez-le précieusement pour votre suivi de commande.",
+    "button": "Retourner à la boutique"
+  },
+  "payment": {
+    "info_title": "Vos Informations",
+    "info_subtitle": "Pour finaliser votre commande",
+    "fullname": "Nom complet",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse de livraison",
+    "continue": "Continuer vers le paiement",
+    "pay_title": "Payer {{amount}} €",
+    "method_card": "Carte Bancaire",
+    "method_paypal": "PayPal",
+    "proceed": "Procéder au paiement",
+    "back": "← Modifier mes informations",
+    "error_redirect": "Erreur lors de la redirection."
+  }
+}

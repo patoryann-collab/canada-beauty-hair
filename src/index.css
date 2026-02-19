@@ -1,0 +1,133 @@
+/* src/index.css */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* Palette Beauty Shop - Élégance Nature */
+  --color-primary: #1B3022;        /* Vert Forêt Profond */
+  --color-secondary: #C5A059;      /* Or Doux */
+  --color-accent: #C5A059;         /* Or Doux (accent) */
+  --color-background: #F9F9F9;     /* Blanc Cassé */
+  
+  /* Couleurs additionnelles pour Beauty Shop */
+  --color-forest: #1B3022;
+  --color-forest-hover: #152418;
+  --color-forest-light: #2A3D2F;
+  --color-gold: #C5A059;
+  --color-gold-hover: #B8944F;
+  --color-gold-light: #D1B06F;
+  --color-cream: #E8E2D9;          /* Beige Sable */
+  --color-cream-hover: #DAD2C7;
+  --color-cream-light: #F0EAE1;
+  --color-text-secondary: #4A5568;
+  --color-text-light: #718096;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  /* On définit une transition personnalisée plus fluide */
+  --animate-pivot: all 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+@layer base {
+
+  /* 1. On s'assure que le HTML et le BODY utilisent 100% de la largeur sans restriction */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* Empêche le défilement horizontal indésirable */
+  }
+
+  body {
+    @apply bg-background text-primary antialiased;
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+
+  /* 2. LE CORRECTIF CRUCIAL : On réinitialise l'élément #root injecté par Vite */
+  /* Par défaut, certains templates centrent le #root, ce qui bloque votre design */
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    /* Force l'affichage en bloc sur toute la largeur */
+  }
+}
+
+@layer utilities {
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  /* Force la visibilité même quand l'élément est plat */
+  .backface-visible {
+    backface-visibility: hidden;
+  }
+
+  /* Utilitaires Beauty Shop */
+  .bg-forest {
+    background-color: var(--color-forest);
+  }
+
+  .bg-forest-hover:hover {
+    background-color: var(--color-forest-hover);
+  }
+
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+
+  .bg-gold-hover:hover {
+    background-color: var(--color-gold-hover);
+  }
+
+  .bg-cream {
+    background-color: var(--color-cream);
+  }
+
+  .bg-cream-hover:hover {
+    background-color: var(--color-cream-hover);
+  }
+
+  .text-forest {
+    color: var(--color-forest);
+  }
+
+  .text-gold {
+    color: var(--color-gold);
+  }
+
+  .border-forest {
+    border-color: var(--color-forest);
+  }
+
+  .border-gold {
+    border-color: var(--color-gold);
+  }
+
+  /* Ombres avec la palette Beauty Shop */
+  .shadow-forest {
+    box-shadow: 0 4px 6px rgba(27, 48, 34, 0.1);
+  }
+
+  .shadow-forest-lg {
+    box-shadow: 0 8px 12px rgba(27, 48, 34, 0.15);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 6px rgba(197, 160, 89, 0.1);
+  }
+
+  .shadow-gold-lg {
+    box-shadow: 0 8px 12px rgba(197, 160, 89, 0.15);
+  }
+}
