@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { WorkspacePremium, People, Favorite, AutoAwesome, Schedule, LocationOn, Phone, Mail } from '@mui/icons-material';
+import FloatingChatbotFixed from '../components/FloatingChatbotFixed';
 
 export default function About() {
   const teamMembers = [
@@ -376,7 +377,9 @@ export default function About() {
           </motion.div>
         </div>
       </section>
-
-      </div>
+      
+      {/* Chatbot IA Flottant */}
+      <FloatingChatbotFixed />
+    </div>
   );
 }

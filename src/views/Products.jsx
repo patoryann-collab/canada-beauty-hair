@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, Star, LocalOffer, Favorite, WhatsApp } from '@mui/icons-material';
+import FloatingChatbotFixed from '../components/FloatingChatbotFixed';
 
 export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -508,6 +509,9 @@ export default function Products() {
           </div>
         </div>
       </section>
+      
+      {/* Chatbot IA Flottant */}
+      <FloatingChatbotFixed />
     </div>
   );
 }

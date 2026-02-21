@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Schedule, People, Filter, Close, WhatsApp } from '@mui/icons-material';
+import FloatingChatbotFixed from '../components/FloatingChatbotFixed';
 
 const servicesData = [
   {
@@ -477,6 +478,45 @@ export default function Services() {
           </motion.div>
         )}
       </AnimatePresence>
+      
+      {/* Chatbot IA Section */}
+      <section className="py-16 bg-[#0A0A0A]">
+        <div className="max-w-4xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+              💇‍♀️ Conseiller Beauté IA
+            </h2>
+            <p className="text-xl text-[#D4AF37] font-medium mb-8">
+              Votre assistant personnel disponible 24/7 pour tous vos conseils beauté
+            </p>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-[#1A1A1A] p-6 rounded-lg border border-[#D4AF37]/30"
+          >
+            <div className="text-center text-white">
+              <p className="mb-4">🚀 Chatbot IA en cours de configuration...</p>
+              <p className="text-sm text-[#E5E5E5]">Backend fonctionnel sur http://localhost:8000</p>
+              <button 
+                onClick={() => window.open('http://localhost:8000', '_blank')}
+                className="mt-4 px-4 py-2 bg-[#D4AF37] text-white rounded-lg hover:bg-[#B89430] transition-colors"
+              >
+                Tester l'API
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+      
+      {/* Chatbot IA Flottant */}
+      <FloatingChatbotFixed />
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ContentCut, Star, Phone, WhatsApp } from '@mui/icons-material';
+import { ContentCut, Star, Phone } from '@mui/icons-material';
 import Footer from '../components/Footer';
+import FloatingChatbotFixed from '../components/FloatingChatbotFixed';
 
 const heroImageUrl = "https://i.pinimg.com/736x/54/97/13/549713fb214f17fdd04bf0341e1c7532.jpg";
 
@@ -277,15 +278,10 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
       
-      {/* Floating WhatsApp Button */}
-      <button 
-        onClick={() => window.open('https://wa.me/15149986842?text=Bonjour, je souhaite prendre rendez-vous', '_blank')}
-        className="fixed bottom-8 right-8 bg-[#D4AF37] text-white p-4 rounded-full shadow-lg hover:bg-[#B89430] transition-all duration-300 z-50 hover:scale-110"
-      >
-        <WhatsApp fontSize="large" />
-      </button>
+      
+      {/* Chatbot IA Flottant */}
+      <FloatingChatbotFixed />
     </div>
   );
 }
