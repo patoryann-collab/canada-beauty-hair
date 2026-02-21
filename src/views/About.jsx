@@ -58,17 +58,17 @@ export default function About() {
               viewport={{ once: true }}
             >
               <h2 
-                className="text-3xl md:text-5xl font-black text-white mb-4"
+                className="text-3xl md:text-5xl font-black text-[#1B3022] mb-4"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
                 L'Excellence au Service de la Beauté à Domicile
               </h2>
-              <p className="text-[#E5E5E5] mb-6 leading-relaxed">
-                Fondée en 2026 par Sophie Laurent, Beauty Shop est né d'une vision : apporter des soins de beauté 
+              <p className="text-[#E5E5E5] mb-6 font-black text-[#1B3022] leading-relaxed">
+                Fondée en 2026 par Julie METO, Beauty Shop est né d'une vision : apporter des soins de beauté 
                 d'exception directement chez vous. Notre philosophie repose sur l'alliance parfaite 
                 entre traditions et innovations, produits bio et techniques de pointe, le tout dans le confort de votre domicile.
               </p>
-              <p className="text-[#E5E5E5] mb-8 leading-relaxed">
+              <p className="text-[#E5E5E5] mb-8 font-black text-[#1B3022] leading-relaxed">
                 Chaque jour, nous nous engageons à vous offrir une expérience unique où votre bien-être est au 
                 cœur de nos préoccupations. Notre équipe d'experts dédiés se déplace pour vous accompagner avec conseil personnalisé 
                 et savoir-faire artisanal, directement chez vous.
