@@ -180,7 +180,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <LocationOn fontSize="small" className="text-[#D4AF37]" />
-                <span className="text-gray-300">123 Avenue Élégance<br />Montréal, QC H3A 1A1</span>
+                <span className="text-gray-300">5821 chemin de la<br />côte saint Luc  H3X 2G2</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Schedule fontSize="small" className="text-[#D4AF37]" />
@@ -207,7 +207,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 Beauty Shop - Élégance Nature. Tous droits réservés.
+              © 2026 Beauty Shop - Élégance Nature. Tous droits réservés.
             </div>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
