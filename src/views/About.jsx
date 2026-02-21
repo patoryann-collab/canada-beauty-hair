@@ -5,19 +5,7 @@ import FloatingChatbotFixed from '../components/FloatingChatbotFixed';
 export default function About() {
   const teamMembers = [
     {
-      name: "Sophie Laurent",
-      role: "Directrice & Esthéticienne",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b912a3f6?q=80&w=400",
-      experience: "Expertise certifiée"
-    },
-    {
-      name: "Marie Dubois",
-      role: "Maquilleuse Professionnelle",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400",
-      experience: "Spécialiste maquillage"
-    },
-    {
-      name: "Claire Martin",
+      name: "Julie METO",
       role: "Coiffeuse & Coloriste",
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400",
       experience: "Technicienne capillaire"
@@ -192,7 +180,7 @@ export default function About() {
 
       {/* Timeline Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -219,11 +207,11 @@ export default function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? 'justify-start' : 'justify-end'
+                className={`relative flex flex-col md:flex-row items-center mb-12 ${
+                  index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'
                 }`}
               >
-                <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'text-right md:pr-8' : 'text-left md:pl-8'}`}>
                   <div className="bg-[#1A1A1A] border border-[#E5E5E5]/20 p-6 rounded-3xl shadow-lg">
                     <div className="text-2xl font-black text-[#D4AF37] mb-2">{milestone.year}</div>
                     <h3 
@@ -244,7 +232,7 @@ export default function About() {
 
       {/* Team Section */}
       <section className="py-20 bg-[#E8E2D9]">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -295,7 +283,7 @@ export default function About() {
 
       {/* Contact Section */}
       <section className="py-20 bg-[#0A0A0A] text-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
