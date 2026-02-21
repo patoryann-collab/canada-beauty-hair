@@ -8,27 +8,24 @@ export default function About() {
       name: "Sophie Laurent",
       role: "Directrice & Esthéticienne",
       image: "https://images.unsplash.com/photo-1494790108755-2616b912a3f6?q=80&w=400",
-      experience: "15+ ans"
+      experience: "Expertise certifiée"
     },
     {
       name: "Marie Dubois",
       role: "Maquilleuse Professionnelle",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400",
-      experience: "10+ ans"
+      experience: "Spécialiste maquillage"
     },
     {
       name: "Claire Martin",
       role: "Coiffeuse & Coloriste",
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400",
-      experience: "12+ ans"
+      experience: "Technicienne capillaire"
     }
   ];
 
   const milestones = [
-    { year: "2014", title: "Ouverture du Salon", description: "Lancement de Beauty Shop avec 3 collaborateurs" },
-    { year: "2017", title: "Première Extension", description: "Agrandissement et ajout de nouveaux services" },
-    { year: "2020", title: "Certification Bio", description: "Obtention des certifications bio et écologiques" },
-    { year: "2024", title: "Excellence", description: "Plus de 5000 clientes satisfaites" }
+    { year: "2026", title: "Création de Beauty Shop", description: "Lancement de notre salon de beauté avec passion et expertise" }
   ];
 
   return (
@@ -58,7 +55,7 @@ export default function About() {
             transition={{ delay: 0.1 }}
             className="text-xl text-[#D4AF37] font-medium leading-relaxed"
           >
-            Depuis 2014, nous sublimons votre beauté naturelle avec expertise et passion
+            Depuis 2026, nous sublimons votre beauté naturelle avec expertise et passion
           </motion.p>
         </div>
       </section>
@@ -79,7 +76,7 @@ export default function About() {
                 L'Excellence au Service de la Beauté à Domicile
               </h2>
               <p className="text-[#E5E5E5] mb-6 leading-relaxed">
-                Fondée en 2014 par Sophie Laurent, Beauty Shop est né d'une vision : apporter des soins de beauté 
+                Fondée en 2026 par Sophie Laurent, Beauty Shop est né d'une vision : apporter des soins de beauté 
                 d'exception directement chez vous. Notre philosophie repose sur l'alliance parfaite 
                 entre traditions et innovations, produits bio et techniques de pointe, le tout dans le confort de votre domicile.
               </p>
@@ -121,8 +118,8 @@ export default function About() {
                 className="rounded-3xl shadow-2xl w-full"
               />
               <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] text-white p-6 rounded-3xl shadow-xl">
-                <div className="text-3xl font-black mb-2">10+</div>
-                <div className="text-sm">Ans d'Excellence</div>
+                <div className="text-3xl font-black mb-2">Excellence</div>
+                <div className="text-sm">Services professionnels</div>
               </div>
             </motion.div>
           </div>
@@ -164,7 +161,7 @@ export default function About() {
               {
                 icon: <WorkspacePremium fontSize="small" />,
                 title: "Expertise",
-                description: "Plus de 10 ans d'expérience et des certifications professionnelles reconnues"
+                description: "Services professionnels et certifications reconnues"
               }
             ].map((value, index) => (
               <motion.div
@@ -209,7 +206,7 @@ export default function About() {
               Notre Parcours
             </h2>
             <p className="text-xl text-[#C5A059] font-medium uppercase tracking-widest">
-              10 ans de passion et de croissance
+              Passion et expertise au service de la beauté
             </p>
           </motion.div>
 
@@ -288,7 +285,7 @@ export default function About() {
                     {member.name}
                   </h3>
                   <p className="text-[#D4AF37] font-medium mb-2">{member.role}</p>
-                  <p className="text-sm text-[#E5E5E5]">{member.experience} d'expérience</p>
+                  <p className="text-sm text-[#E5E5E5]">{member.experience}</p>
                 </div>
               </motion.div>
             ))}
